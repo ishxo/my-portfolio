@@ -6,21 +6,21 @@ import { HeroType } from "@/app/types/hero";
 
 // Hero
 export const HeroData: HeroType[] = [
-  { imgSrc: "/images/project/rbtex_web.png" },
-  { imgSrc: "/images/project/rbtex_web1.png" },
-  { imgSrc: "/images/project/rbtex_web2.png" },
-  { imgSrc: "/images/project/pet_sharing1.png" },
-  { imgSrc: "/images/project/pet_sharing2.png" },
-  { imgSrc: "/images/project/pet_sharing3.png" },
-  { imgSrc: "/images/project/khosrov.png" },
-  { imgSrc: "/images/project/nfty.png" },
-  { imgSrc: "/images/project/blockstars.png" },
-  { imgSrc: "/images/project/blockstars1.png" },
-  { imgSrc: "/images/project/blockstars2.png" },
-  { imgSrc: "/images/project/lotto.png" },
-  { imgSrc: "/images/project/lotto1.png" },
-  { imgSrc: "/images/project/lotto2.png" },
-  { imgSrc: "/images/project/rbtm.png" },
+  { imgSrc: "images/project/rbtex_web.png" },
+  { imgSrc: "images/project/rbtex_web1.png" },
+  { imgSrc: "images/project/rbtex_web2.png" },
+  { imgSrc: "images/project/pet_sharing1.png" },
+  { imgSrc: "images/project/pet_sharing2.png" },
+  { imgSrc: "images/project/pet_sharing3.png" },
+  { imgSrc: "images/project/khosrov.png" },
+  { imgSrc: "images/project/nfty.png" },
+  { imgSrc: "images/project/blockstars.png" },
+  { imgSrc: "images/project/blockstars1.png" },
+  { imgSrc: "images/project/blockstars2.png" },
+  { imgSrc: "images/project/lotto.png" },
+  { imgSrc: "images/project/lotto1.png" },
+  { imgSrc: "images/project/lotto2.png" },
+  { imgSrc: "images/project/rbtm.png" },
 ];
 
 // Projects
