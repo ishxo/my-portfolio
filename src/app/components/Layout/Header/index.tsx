@@ -7,7 +7,7 @@ import MobileHeaderLink from "./Navigation/MobileHeaderLink";
 import { Icon } from "@iconify/react";
 import { useTheme } from "next-themes";
 import LanguageSelector from "../../LanguageSelector/LanguageSelector";
-import { NavLinkData } from "@/data"; // ✅ import static nav links
+import { NavLinkData } from "@/data"; 
 
 const Header: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);

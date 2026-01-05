@@ -79,7 +79,7 @@ const Hero = () => {
                 </div>
 
                 <div className="flex gap-5">
-                  <Link href="/#project">
+                  <Link href="#project">
                     <button className="px-8 py-3 bg-primary text-white rounded-lg flex items-center gap-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const Hero = () => {
                     </button>
                   </Link>
 
-                  <Link href="/#contact">
+                  <Link href="#contact">
                     <button className="px-8 py-3 bg-primary text-white rounded-lg flex items-center gap-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -174,6 +174,22 @@ const Hero = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="absolute top-65 left-[10%] dark:opacity-10 z-10">
+          <Image
+            src={"images/banner/pattern1.svg"}
+            alt="ptrn1"
+            width={141}
+            height={141}
+          />
+        </div>
+        <div className="absolute bottom-80 rotate-180 left-[45%] dark:opacity-10 z-10">
+          <Image
+            src={"images/banner/pattern1.svg"}
+            alt="ptrn1"
+            width={141}
+            height={141}
+          />
         </div>
       </div>
     </section>
