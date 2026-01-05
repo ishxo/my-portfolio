@@ -165,7 +165,7 @@ const ContactForm = () => {
           </div>
           {showThanks && (
             <div className="text-white bg-primary rounded-full px-4 text-lg mb-4.5 mt-1 absolute flex items-center gap-2">
-              Thank you for contacting us! We will get back to you soon.
+              {t(`contact.thanks`)}
               <div className="w-3 h-3 rounded-full animate-spin border-2 border-solid border-white border-t-transparent"></div>
             </div>
           )}

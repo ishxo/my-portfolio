@@ -49,8 +49,6 @@ const Header: React.FC = () => {
         className={`container flex items-center justify-between gap-10 duration-300 ${sticky ? "py-3" : "py-4"}`}
       >
         <Logo />
-
-        {/* Desktop Nav */}
         <nav>
           <ul className="hidden xl:flex flex-grow items-center justify-start gap-10">
             {NavLinkData.map((item, index) => (
@@ -58,8 +56,6 @@ const Header: React.FC = () => {
             ))}
           </ul>
         </nav>
-
-        {/* Right Buttons */}
         <div className="flex items-center gap-4">
           <LanguageSelector />
           <button
@@ -92,13 +88,9 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-
-      {/* Mobile Overlay */}
       {navbarOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40" />
       )}
-
-      {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
         className={`xl:hidden fixed top-0 right-0 h-full w-full bg-white dark:bg-darklight shadow-lg transform transition-transform duration-300 max-w-xs ${navbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
@@ -127,7 +119,6 @@ const Header: React.FC = () => {
             </svg>
           </button>
         </div>
-
         <nav className="flex flex-col items-start p-4">
           {NavLinkData.map((item, index) => (
             <MobileHeaderLink

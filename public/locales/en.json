@@ -40,7 +40,8 @@
     "email": "email address",
     "phone": "phone number",
     "message": "message",
-    "submit": "submit"
+    "submit": "submit",
+    "thanks": "Thank you for contacting me! I will get back to you soon."
   },
   "footer": {
     "armenia": "Armenia Yerevan"

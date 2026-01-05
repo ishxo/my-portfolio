@@ -31,30 +31,33 @@ const Hero = () => {
             <div className="lg:col-span-7">
               <div className="flex flex-col lg:items-start items-center gap-12">
                 <div className="text-center mb-5 sm:mb-12">
-                  <div className="flex justify-center items-center gap-2 mb-8 mt-20">
-                    <div className="w-[100px] h-[100px] rounded-full overflow-hidden">
+                  <div className="flex justify-center items-center gap-4 mb-8 mt-20">
+                    <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex-shrink-0">
                       <Image
-                        src="images/self/me.jpeg"
+                        src="/images/self/me.jpeg"
                         alt="me"
                         width={100}
                         height={100}
                         className="object-cover"
                       />
                     </div>
-                    <h3 className="transform rotate-12 font-semibold">
-                      {t("hero.who")} <strong>{t("hero.am_i")}</strong>
-                    </h3>
-                    <h3 className="transform rotate-90 text-red-500 font-semibold">
-                      ?
-                    </h3>
+                    <div className="flex items-center relative">
+                      <h3 className="transform rotate-12 font-semibold text-gray-500 inline-block leading-none">
+                        {t("hero.who")} <strong>{t("hero.am_i")}</strong>{" "}
+                        <span className="transform rotate-90 text-red-500 font-semibold inline-block leading-none ml-2">
+                          ?
+                        </span>
+                      </h3>
+                    </div>
                   </div>
 
                   <Link
                     href="https://www.google.com/maps/place/Armenia"
                     target="_blank"
                   >
-                    <p className="text-lg font-semibold">
-                      🌍 {t("hero.location")} 🇦🇲
+                    <p className="text-lg font-semibold underline">
+                      📍
+                      {t("hero.location")} 🇦🇲
                     </p>
                   </Link>
 
@@ -77,14 +80,79 @@ const Hero = () => {
 
                 <div className="flex gap-5">
                   <Link href="/#project">
-                    <button className="px-8 py-3 bg-primary text-white rounded-lg">
+                    <button className="px-8 py-3 bg-primary text-white rounded-lg flex items-center gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z"
+                        />
+                      </svg>
                       {t("hero.explore")}
                     </button>
                   </Link>
+
                   <Link href="/#contact">
-                    <button className="px-8 py-3 border border-primary text-primary rounded-lg">
+                    <button className="px-8 py-3 bg-primary text-white rounded-lg flex items-center gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M2 8.5v7a2 2 0 002 2h16a2 2 0 002-2v-7a2 2 0 00-2-2H4a2 2 0 00-2 2z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M7 12h10M7 16h6"
+                        />
+                      </svg>
                       {t("hero.contact")}
                     </button>
+                  </Link>
+                </div>
+
+                <div className="flex gap-4">
+                  <Link href="https://t.me/@Ishxan_K" target="_blank">
+                    <Icon
+                      icon="tabler:brand-telegram"
+                      width={45}
+                      height={45}
+                      className="text-darkblue dark:text-white bg-darkmode/5 dark:bg-white/10 rounded-lg p-2 hover:text-primary dark:hover:text-primary duration-300"
+                    />
+                  </Link>
+                  <Link href="https://github.com/ishxo" target="_blank">
+                    <Icon
+                      icon="tabler:brand-github"
+                      width={45}
+                      height={45}
+                      className="text-darkblue dark:text-white bg-darkmode/5 dark:bg-white/10 rounded-lg p-2 hover:text-primary dark:hover:text-primary duration-300"
+                    />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/ishkhan-kostanyan-962b67182/"
+                    target="_blank"
+                  >
+                    <Icon
+                      icon="tabler:brand-linkedin-filled"
+                      width={45}
+                      height={45}
+                      className="text-darkblue dark:text-white bg-darkmode/5 dark:bg-white/10 rounded-lg p-2 hover:text-primary dark:hover:text-primary duration-300"
+                    />
                   </Link>
                 </div>
               </div>

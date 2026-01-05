@@ -50,8 +50,6 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-
-          {/* COLUMN-2 */}
           <div className="lg:col-span-4 col-span-1">
             <div className="flex gap-20">
               {FooterLinkData.map((section, i) => (
@@ -72,8 +70,6 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
-          {/* COLUMN-3 */}
           <div className="lg:col-span-4 col-span-1">
             <div className="flex gap-2">
               <Icon
