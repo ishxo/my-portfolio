@@ -28,7 +28,7 @@ export const projects: ProjectType[] = [
   {
     title: "Pet Sharing!",
     imgSrc: "images/project/pet_sharing.png",
-    location: "/images/project/app_store.webp",
+    location: "images/project/app_store.webp",
     locationName: "App Store",
     sharing: "",
     link: "https://apps.apple.com/us/app/pupdates-pet-sharing/id6743079360",
