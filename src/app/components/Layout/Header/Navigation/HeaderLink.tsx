@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
@@ -12,7 +13,9 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({ item }) => {
   const path = usePathname();
   const { t } = useTranslation();
 
-  const isActive = path === item.href;
+  const isActive =
+    path === item.href ||
+    (item.href.includes("#") && path === item.href.split("#")[0]);
 
   return (
     <li className="relative">
