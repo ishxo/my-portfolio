@@ -9,7 +9,6 @@ import { projects } from "@/data";
 
 const Project = () => {
   const { t } = useTranslation();
-  const loading = false;
   const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
     <button
       className="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 left-[-50px] z-30 w-10 h-10 rounded-full
