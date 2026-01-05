@@ -175,22 +175,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-65 left-[10%] dark:opacity-10 z-10">
-          <Image
-            src={"images/banner/pattern1.svg"}
-            alt="ptrn1"
-            width={141}
-            height={141}
-          />
-        </div>
-        <div className="absolute bottom-80 rotate-180 left-[45%] dark:opacity-10 z-10">
-          <Image
-            src={"images/banner/pattern1.svg"}
-            alt="ptrn1"
-            width={141}
-            height={141}
-          />
-        </div>
       </div>
     </section>
   );
