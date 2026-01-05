@@ -34,7 +34,7 @@ const Hero = () => {
                   <div className="flex justify-center items-center gap-4 mb-8 mt-20">
                     <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex-shrink-0">
                       <Image
-                        src="/images/self/me.jpeg"
+                        src="images/self/me.jpeg"
                         alt="me"
                         width={100}
                         height={100}
