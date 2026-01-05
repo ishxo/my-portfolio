@@ -113,10 +113,10 @@ export const CompaniesData: CompaniesType[] = [
 
 // Nav links
 export const NavLinkData: NavLinkType[] = [
-  { label: "who_am_i", href: "/#hero" },
-  { label: "my_journey", href: "/#companies" },
-  { label: "projects", href: "/#project" },
-  { label: "contact_me", href: "/#contact" },
+  { label: "who_am_i", href: "#hero" },
+  { label: "my_journey", href: "#companies" },
+  { label: "projects", href: "#project" },
+  { label: "contact_me", href: "#contact" },
 ];
 
 // Footer links
@@ -124,10 +124,10 @@ export const FooterLinkData: FooterLinkType[] = [
   {
     section: "Company",
     links: [
-      { label: "who_am_i", href: "/#hero" },
-      { label: "my_journey", href: "/#companies" },
-      { label: "projects", href: "/#project" },
-      { label: "contact_me", href: "/#contact" },
+      { label: "who_am_i", href: "#hero" },
+      { label: "my_journey", href: "#companies" },
+      { label: "projects", href: "#project" },
+      { label: "contact_me", href: "#contact" },
     ],
   },
 ];
