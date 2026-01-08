@@ -35,9 +35,11 @@ const ContactForm = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
+
     setFormData((prevData) => ({
       ...prevData,
-      [name as keyof FormData]: value,
+      [name as keyof FormData]:
+        name === "phnumber" ? value.replace(/(?!^\+)\D/g, "") : value,
     }));
   };
 
